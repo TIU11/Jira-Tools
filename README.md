@@ -8,10 +8,14 @@ Methods that access Jira's api's to do useful things.
 2. Update `jira.yml` with your Jira settings
 3. Require Jira class and call the methods.
 
-Example:
+    <pre>
     require './jira.rb'
     j = Jira.new
     j.search "resolved > startOfDay()"
+    puts "#{j.total_time_spent} seconds"
+    puts "#{j.total_story_points} points"
+    puts "#{j.data['issues'].count} issues"
+    </pre>
 
 ## Todo
 
