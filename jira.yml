@@ -1,0 +1,13 @@
+user: jdoe
+password: secret
+host: jira.example.com
+port: 80
+base_path: /rest/api/latest/
+
+default_fields:
+  - summary
+  - status
+  - assignee
+  - timetracking
+  - project
+  - customfield_10002 # story_points
